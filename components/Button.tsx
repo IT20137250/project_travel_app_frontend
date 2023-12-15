@@ -3,8 +3,9 @@ import Image from "next/image";
 type ButtonProps = {
   type: "button" | "submit";
   title: string;
-  icon?: string; /* By adding ?: because some buttons are not icons */
+  icon?: string /* By adding ?: because some buttons are not icons */;
   variant: string;
+  full?: boolean;
 };
 
 const Button = ({ type, title, icon, variant }: ButtonProps) => {
